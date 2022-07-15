@@ -24,23 +24,6 @@ function addExpense(){
         table_body.firstElementChild.setAttribute('class','nodisplay');
 
         let tr=document.createElement('tr');
-
-        table_body.append(tr);
-
-        let td1=document.createElement('td');
-        let td2=document.createElement('td');
-        let td3=document.createElement('td');
-        let td4=document.createElement('td');
-
-        tr.append(td1);
-        tr.append(td2);
-        tr.append(td3);
-        tr.append(td4);
-
-        td1.innerText=expense.value;
-        td2.innerText=date.value;
-        td3.innerText=amount.value;
-
         let delete_button=document.createElement('input');
 
         table_body.append(tr);
