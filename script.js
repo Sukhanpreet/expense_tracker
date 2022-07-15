@@ -29,10 +29,6 @@ function addExpense(){
         tr.append(td2);
         tr.append(td3);
         tr.append(td4);
-    
-
-        console.log(tr.previousElementSibling);
-        console.log(tr.nextElementSibling);
 
         td1.innerText=expense.value;
         td2.innerText=date.value;
