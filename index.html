@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Skaur" />
+    <meta name="description" content="Expense tracker: add or delete expense" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Expense Tracker</h1>
+        <p>Add A New Item</p>
+      </header>
+      <main>
+        <section>
+          <form action="">
+            <div>
+              <label for="expense">Name:</label>
+              <input
+                type="text"
+                name="expense"
+                id="expense"
+                placeholder="Where was the expense made?"
+                required
+              />
+            </div>
+            <div>
+              <label for="date">Date:</label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                min="2010-01-01"
+                max="2040-12-31"
+                required
+              />
+            </div>
+            <div>
+              <label for="amount">Amount:</label>
+              <input type="number" name="anount" id="amount" required />
+            </div>
+            <div>
+              <input type="button" value="Add Expense" id="addExpense" />
+            </div>
+          </form>
+        </section>
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Date</th>
+                <th scope="col">Amount</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <td colspan="4">NO Date</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
